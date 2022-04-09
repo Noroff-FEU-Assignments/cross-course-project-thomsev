@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <title>Rainydays | Jackets</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="The homepage of Rainydays" />
+        <meta name="viewport" content="width=device-width. initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css"/>   
+        <link rel="stylesheet" href="/css/jackets.css"/>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/690f4b3e4c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="/images/RainyDays_Logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jackets.html" class="active">Jackets</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>    
+    </section>
+    <section class="jakker" id="jakke1">
+        <nav>
+            <img src="/images/jacket_PNG8041.png" alt="jakke1" class="jakker">
+        </nav>
+    </section>
+    <section class="jacketdiscription">
+        <a href="/checkout.html"class="hero-btn">Add to cart</a>
+        <h3>Hiking</h3>
+        <p>Our most versaitile and comfy jackets
+            for every situation.</p>
+            <section class="checkbox">
+            <input type="checkbox" checked> Small 
+            <input type="checkbox"> Medium 
+            <input type="checkbox"> Large    
+            <input type="checkbox"> Extra-Large     
+        </section>   
+        <section class="price">
+            <small>299$</small>
+        </section>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>
